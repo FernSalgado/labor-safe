@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Labor Safe</title>
+  <link rel="icon" href="icone.png">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/jquery-ui.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+      <a class="navbar-brand" href="#">LaborSafe</a>
+      <div class="collapse navbar-collapse" id="navbarMobile">
+        <div class="navbar-nav ">
+          <a class="nav-item nav-link active text-warning" href="#sobre">Sobre<span class="sr-only">(current)</span></a>
+          <a class="nav-item nav-link text-warning" href="#parceiros">Parceiros</a>
+          <a class="nav-item nav-link text-warning" href="#contato">Contato</a>
+        </div>
+      </div>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMobile">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+    </nav>
+  </header>
+  <div class="bd-example">
+    <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+        <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="img/banner1.jpg" width="1000px" height="500px" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>First slide label</h5>
+            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/banner2.jpg" width="1000px" height="500px" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Second slide label</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/banner3.jpg" width="1000px" height="500px" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Third slide label</h5>
+            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+          </div>
+        </div>
+      </div>
+      <a class=" carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+        <span class="bg-dark py-3 px-3 carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Voltar</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+        <span class="bg-dark py-3 px-3 carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Avançar</span>
+      </a>
+    </div>
+  </div>
+  <div class="container-fluid">
+    <section class="sobre row" id="sobre">
+      <div class="col-11 mx-auto text-dark jumbotron mt-4 bg-transparent border border-warning">
+        <h2 class="display-4">SOBRE A EMPRESA</h2>
+        <p class="text-justify text-wrap">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+          Lorem Ipsum has been the industry's
+          standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
+          make a type specimen book. It has survived not only five centuries, but also the leap into electronic
+          typesetting, remaining essentially unchanged. It was popularised in the 1960s with the
+          release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
+          publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+      </div>
+    </section>
+
+    <section class="bg-dark row" id="parceiros">
+      <div class="col-11 mx-auto jumbotron mx-auto text-dark mt-4 mb-4">
+        <h2 class="display-4">Parceiros</h2>
+        <div class="text-justify text-wrap opacidade">
+          <p>orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+            industry's
+            standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
+            make a type specimen book. It has survived not only five centuries, but also the leap into electronic
+            typesetting, remaining essentially unchanged. It was popularised in the 1960s with the
+            release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
+            publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+          </p>
+          <hr class="border-warning" />
+          <button onClick="modalOrcamento()" class="btn btn-warning btn-lg mx-auto d-block" data-toggle="modal"
+            data-target="#modalParceiro">Quero ser parceiro!</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="row contato text-dark text-justify pt-4 " id="contato">
+      <div class="col-5 jumbotron mx-auto bg-transparent border border-warning">
+        <h3 class="text-center">FALE COM A GENTE</h3>
+        <p>Entre em contato agora mesmo para esclarecimento de dúvidas, reclamações ou dúvidas.</p>
+        <hr class="border-warning" />
+        <button class="btn btn-warning btn-lg d-block mx-auto" data-toggle="modal" data-target="#modalContato">Entrar em
+          Contato</button>
+      </div>
+
+      <div class="col-5 jumbotron mx-auto bg-transparent border border-warning">
+        <h3 class="text-center">ORÇAMENTO ONLINE</h3>
+        <p>Solicite de forma fácil e rápida o seu orçamento. Solicite de forma fácil e rápida o seu orçamento.</p>
+        <hr class="border-warning" />
+        <button class="btn btn-warning btn-lg d-block mx-auto" data-toggle="modal"
+          data-target="#modalOrcamento">Solicitar
+          Orçamento</button>
+      </div>
+    </section>
+  </div>
+
+  <div id="modalContato" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="modalContatoTitulo"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalContatoTitulo">Contato</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+                <label>Email:</label>
+                <input class="form-control" type="email" required>
+            </div>
+            <div class="form-group">
+                <label>Nome:</label>
+                <input class="form-control" type="text" required>
+            </div>
+            <div class="form-group">
+                <label>Motivo:</label>
+                <select class="form-control"> 
+                  <option>1</option>
+                  <option>1</option>
+                  <option>1</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Comentário:</label>
+                <input type="textarea" class="form-control" rows="3" required>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+          <button type="button" class="btn btn-warning">Enviar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="modalOrcamento" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="modalOrcamentoTitulo"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalOrcamentoTitulo">Orçamento</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <label>Orçamento</label>
+            <input>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+          <button type="button" class="btn btn-warning">Enviar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="modalParceiro" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="modalParceiroTitulo"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalParceiroTitulo">Parceiro</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <label>Parceiro</label>
+            <input>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+          <button type="button" class="btn btn-warning">Enviar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="bg-warning py-5">
+    <p class="text-center">LaborSafe</p>
+  </footer>
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/jquery-ui.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>
