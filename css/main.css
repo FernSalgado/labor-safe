@@ -2,6 +2,28 @@
     background-color:transparent!important;
     position: relative;
 }
+body{
+    font-family: 'Roboto', sans-serif!important;
+}
+.preto{
+    background-color: #010101;
+}
+
+.amarelo{
+    background-color:#FBC42A;
+}
+
+.amarelo-texto{
+    color: #FBC42A;
+}
+
+.preto-text{
+    color:#010101;
+}
+
+.amarelo-borda{
+    border: 1px solid #FBC42A !important;
+}
 .sobre:before{
     background-image: url('../img/seja-parceiro.jpg');
     background-size: cover;

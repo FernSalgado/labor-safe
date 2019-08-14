@@ -10,12 +10,13 @@
   <link rel="stylesheet" href="css/jquery-ui.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-</head>
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet"> 
+  </head>
 
 <body>
 
   <header class="sticky-top">
-    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-light preto">
       <a class="navbar-brand" href="#"><img src="img/logo.png" width="160" height="90"></a>
       <div class="collapse navbar-collapse" id="navbarMobile">
         <div class="navbar-nav ">
@@ -60,20 +61,20 @@
         </div>
       </div>
       <a class=" carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
-        <span class="bg-dark py-3 px-3 carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="preto py-3 px-3 carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="sr-only">Voltar</span>
       </a>
       <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
-        <span class="bg-dark py-3 px-3 carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="preto py-3 px-3 carousel-control-next-icon" aria-hidden="true"></span>
         <span class="sr-only">Avançar</span>
       </a>
     </div>
   </div>
   <div class="container-fluid">
     <section class="sobre row" id="sobre">
-      <div class="col-11 mx-auto text-dark jumbotron mt-4 bg-transparent border border-warning">
+      <div class="col-11 mx-auto text-dark jumbotron mt-4 bg-transparent amarelo-borda">
         <h2 class="display-4">SOBRE A EMPRESA</h2>
-        <hr class="border-warning"/>
+        <hr class="amarelo-borda"/>
         <p class="text-justify text-wrap">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
           Lorem Ipsum has been the industry's
           standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
@@ -84,10 +85,10 @@
       </div>
     </section>
 
-    <section class="bg-dark row" id="parceiros">
-      <div class="col-11 mx-auto jumbotron mx-auto text-white bg-transparent border border-warning mt-4 mb-4">
-        <h2 class="display-4">Parceiros</h2>
-        <hr class="border-warning" />
+    <section class="preto row" id="parceiros">
+      <div class="col-11 mx-auto jumbotron mx-auto text-white bg-transparent amarelo-borda mt-4 mb-4">
+        <h2 class="display-4">PARCEIROS</h2>
+        <hr class="amarelo-borda" />
         <div class="text-justify text-wrap opacidade">
           <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
             industry's
@@ -98,16 +99,16 @@
             publishing software like Aldus PageMaker including versions of Lorem Ipsum.
           </p>
           
-          <button onClick="modalOrcamento()" class="btn btn-warning btn-lg mt-5 mx-auto d-block" data-toggle="modal"
+          <button class="btn btn-warning btn-lg mt-5 mx-auto d-block" data-toggle="modal"
             data-target="#modalParceiro">Quero ser parceiro!</button>
         </div>
       </div>
     </section>
 
     <section class="row contato text-dark text-justify pt-4 " id="contato">
-      <div class="col-sm-11 jumbotron mx-auto bg-transparent border border-warning">
+      <div class="col-sm-11 jumbotron mx-auto bg-transparent amarelo-borda">
         <h3 class="display-4">FALE COM A GENTE</h3>
-        <hr class="border-warning" />
+        <hr class="amarelo-borda" />
         <p>Entre em contato agora mesmo para esclarecimento de dúvidas, reclamações ou orçamentos.</p>
         
         <button class="btn btn-warning btn-lg d-block mx-auto mt-5" data-toggle="modal" data-target="#modalContato">Entrar em
@@ -182,7 +183,7 @@
     </div>
   </div>
 
-  <footer class="bg-warning py-5">
+  <footer class="amarelo py-5">
     <p class="text-center">LaborSafe</p>
   </footer>
   <script src="js/jquery-3.4.1.min.js"></script>
