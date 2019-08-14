@@ -6,11 +6,11 @@ body{
     font-family: 'Roboto', sans-serif!important;
 }
 .preto{
-    background-color: #010101;
+    background-color: #010101!important;
 }
 
 .amarelo{
-    background-color:#FBC42A;
+    background-color:#FBC42A!important;
 }
 
 .amarelo-texto{
