@@ -73,6 +73,7 @@
     <section class="sobre row" id="sobre">
       <div class="col-11 mx-auto text-dark jumbotron mt-4 bg-transparent border border-warning">
         <h2 class="display-4">SOBRE A EMPRESA</h2>
+        <hr class="border-warning"/>
         <p class="text-justify text-wrap">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
           Lorem Ipsum has been the industry's
           standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
@@ -84,10 +85,11 @@
     </section>
 
     <section class="bg-dark row" id="parceiros">
-      <div class="col-11 mx-auto jumbotron mx-auto text-dark mt-4 mb-4">
+      <div class="col-11 mx-auto jumbotron mx-auto text-white bg-transparent border border-warning mt-4 mb-4">
         <h2 class="display-4">Parceiros</h2>
+        <hr class="border-warning" />
         <div class="text-justify text-wrap opacidade">
-          <p>orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
             industry's
             standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
             make a type specimen book. It has survived not only five centuries, but also the leap into electronic
@@ -95,29 +97,21 @@
             release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
             publishing software like Aldus PageMaker including versions of Lorem Ipsum.
           </p>
-          <hr class="border-warning" />
-          <button onClick="modalOrcamento()" class="btn btn-warning btn-lg mx-auto d-block" data-toggle="modal"
+          
+          <button onClick="modalOrcamento()" class="btn btn-warning btn-lg mt-5 mx-auto d-block" data-toggle="modal"
             data-target="#modalParceiro">Quero ser parceiro!</button>
         </div>
       </div>
     </section>
 
     <section class="row contato text-dark text-justify pt-4 " id="contato">
-      <div class="col-5 jumbotron mx-auto bg-transparent border border-warning">
-        <h3 class="text-center">FALE COM A GENTE</h3>
-        <p>Entre em contato agora mesmo para esclarecimento de dúvidas, reclamações ou dúvidas.</p>
+      <div class="col-sm-11 jumbotron mx-auto bg-transparent border border-warning">
+        <h3 class="display-4">FALE COM A GENTE</h3>
         <hr class="border-warning" />
-        <button class="btn btn-warning btn-lg d-block mx-auto" data-toggle="modal" data-target="#modalContato">Entrar em
+        <p>Entre em contato agora mesmo para esclarecimento de dúvidas, reclamações ou orçamentos.</p>
+        
+        <button class="btn btn-warning btn-lg d-block mx-auto mt-5" data-toggle="modal" data-target="#modalContato">Entrar em
           Contato</button>
-      </div>
-
-      <div class="col-5 jumbotron mx-auto bg-transparent border border-warning">
-        <h3 class="text-center">ORÇAMENTO ONLINE</h3>
-        <p>Solicite de forma fácil e rápida o seu orçamento. Solicite de forma fácil e rápida o seu orçamento.</p>
-        <hr class="border-warning" />
-        <button class="btn btn-warning btn-lg d-block mx-auto" data-toggle="modal"
-          data-target="#modalOrcamento">Solicitar
-          Orçamento</button>
       </div>
     </section>
   </div>
@@ -154,30 +148,6 @@
                 <label>Comentário:</label>
                 <input type="textarea" class="form-control" rows="3" required>
             </div>
-          </form>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-          <button type="button" class="btn btn-warning">Enviar</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div id="modalOrcamento" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="modalOrcamentoTitulo"
-    aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="modalOrcamentoTitulo">Orçamento</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          <form>
-            <label>Orçamento</label>
-            <input>
           </form>
         </div>
         <div class="modal-footer">
